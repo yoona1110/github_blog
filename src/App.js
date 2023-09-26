@@ -2,7 +2,10 @@ import styled from 'styled-components';
 import { Routes, Route } from 'react-router-dom';
 
 import Header from './components/Header';
-import Main from './pages/Main';
+import Home from './pages/Home';
+import Category from './pages/Category';
+import About from './pages/About';
+import Search from './pages/Search';
 
 import './App.css';
 
@@ -11,7 +14,10 @@ const App = () => {
     <Container>
       <Header />
       <Routes>
-        <Route path='/' element={<Main/>} />
+        <Route path='/Home' element={<Home/>} />
+        <Route path='/Category' element={<Category/>} />
+        <Route path='/About' element={<About/>} />
+        <Route path='/Search' element={<Search/>} />
       </Routes>
     </Container>
   );

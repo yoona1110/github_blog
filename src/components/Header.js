@@ -1,9 +1,11 @@
 import { useState } from "react";
 import styled from "styled-components";
+import { Link } from "react-router-dom";
 
 const Header = () => {
     const menuItem = ["Home", "Category", "About", "Search"];
     const [mouseOver, setMouseOver] = useState(null);
+
 
     return (
         <Container>
@@ -12,6 +14,7 @@ const Header = () => {
                 <Menu>
                     {menuItem.map((item, idx) => (
                         <MenuDetail 
+                            to={`/${item}`}
                             key={idx}
                             onMouseOver={() => setMouseOver(idx)}
                             onMouseOut={() => setMouseOver(null)}
@@ -49,18 +52,18 @@ const Menu = styled.div`
     margin: 0 auto;
     margin-right: 0;
 `;
-const MenuDetail = styled.div`
+const MenuDetail = styled(Link)`
     margin-left: 60px;
     padding: 0 5px 6px 5px;
     transition: box-shadow 0.4s ease;
-    box-shadow: ${(props) => props.isMouseOver
-                ? "0px 4px 0px 0px #070582"
-                : "0px transparent"
-    };
+    box-shadow: ${(props) => 
+        props.isMouseOver ? "0px 4px 0px 0px #070582" : "0px transparent"};
+
     color: #070582;
     font-size: 24px;
     font-weight: 400;
     line-height: normal;
+    text-decoration: none;
 
     cursor: pointer;
 `;
