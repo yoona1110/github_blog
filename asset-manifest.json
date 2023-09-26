@@ -1,16 +1,16 @@
 {
   "files": {
-    "main.css": "/yoona1110.github.io/static/css/main.f1559aff.css",
-    "main.js": "/yoona1110.github.io/static/js/main.ddf9352f.js",
-    "static/media/githubMark.svg": "/yoona1110.github.io/static/media/githubMark.286b57f7dd6c4e2d10708fe01850285f.svg",
-    "static/media/emailMark.svg": "/yoona1110.github.io/static/media/emailMark.def063880ba752241e8e1f8c1404f377.svg",
-    "index.html": "/yoona1110.github.io/index.html",
-    "static/media/habitationMark.svg": "/yoona1110.github.io/static/media/habitationMark.9ff5867136e2bb72825af66da92991f1.svg",
-    "main.f1559aff.css.map": "/yoona1110.github.io/static/css/main.f1559aff.css.map",
-    "main.ddf9352f.js.map": "/yoona1110.github.io/static/js/main.ddf9352f.js.map"
+    "main.css": "/github_blog/static/css/main.f1559aff.css",
+    "main.js": "/github_blog/static/js/main.9db1d7c0.js",
+    "static/media/githubMark.svg": "/github_blog/static/media/githubMark.286b57f7dd6c4e2d10708fe01850285f.svg",
+    "static/media/emailMark.svg": "/github_blog/static/media/emailMark.def063880ba752241e8e1f8c1404f377.svg",
+    "static/media/habitationMark.svg": "/github_blog/static/media/habitationMark.9ff5867136e2bb72825af66da92991f1.svg",
+    "index.html": "/github_blog/index.html",
+    "main.f1559aff.css.map": "/github_blog/static/css/main.f1559aff.css.map",
+    "main.9db1d7c0.js.map": "/github_blog/static/js/main.9db1d7c0.js.map"
   },
   "entrypoints": [
     "static/css/main.f1559aff.css",
-    "static/js/main.ddf9352f.js"
+    "static/js/main.9db1d7c0.js"
   ]
 }
