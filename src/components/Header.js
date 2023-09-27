@@ -6,7 +6,6 @@ const Header = () => {
     const menuItem = ["Home", "Category", "About", "Search"];
     const [mouseOver, setMouseOver] = useState(null);
 
-
     return (
         <Container>
             <SubContainer>

@@ -8,6 +8,7 @@ import Profile from '../assets/ProfileImg.jpeg';
 
 const Home = () => {
     const url = 'https://github.com/yoona1110';
+    const email = 'mailto:gjdbsdk18@icloud.com';
 
     return (
         <Container>
@@ -17,21 +18,21 @@ const Home = () => {
                 <ProfileSubName> 개발 블로그 </ProfileSubName>
                 <ProfileDetailInfo>
                     <img 
-                        style={{ width: '22px', height: '23px' }} 
+                        style={{ width: '22px', height: '21px' }} 
                         src={habitationImg}
                     />
                     <ProfileDetailTitle> ChunCheon </ProfileDetailTitle>
                 </ProfileDetailInfo>
-                <ProfileDetailInfo> 
+                <ProfileDetailInfo onClick={() => window.open(email)}> 
                     <img 
-                        style={{ width: '22px', height: '16px' }} 
+                        style={{ width: '22px', height: '15px' }} 
                         src={emailImg}
                     />
                     <ProfileDetailTitle> Email </ProfileDetailTitle>
                 </ProfileDetailInfo>
                 <ProfileDetailInfo onClick={() => window.open(url)}>
                     <img 
-                        style={{ width: '22px', height: '21px' }} 
+                        style={{ width: '22px', height: '20px' }} 
                         src={gitHubImg}
                     />
                     <ProfileDetailTitle> GitHub </ProfileDetailTitle>
@@ -70,7 +71,7 @@ const ProfileName = styled.p`
 `;
 const ProfileSubName = styled.p`
     margin: 0 auto;
-    margin-bottom: 50px;
+    margin-bottom: 30px;
     color: #4B4B4B;
     font-size: 18px;
     font-weight: 400;
@@ -81,12 +82,12 @@ const ProfileDetailInfo = styled.div`
     display: flex;
     flex-direction: row;
     align-items: center;
-    margin-bottom: -15px;
+    margin-bottom: -25px;
 
     cursor: pointer;
 `;
 const ProfileDetailTitle = styled.p`
-    margin-left: 9px;
+    margin-left: 8px;
     color: #4B4B4B;
     font-size: 17px;
     font-weight: 400;
