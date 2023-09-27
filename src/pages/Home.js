@@ -4,13 +4,15 @@ import habitationImg from '../assets/habitationMark.svg';
 import emailImg from '../assets/emailMark.svg';
 import gitHubImg from '../assets/githubMark.svg';
 
+import Profile from '../assets/ProfileImg.jpeg';
+
 const Home = () => {
     const url = 'https://github.com/yoona1110';
 
     return (
         <Container>
             <ProfileInfo>
-                <ProfileImg />
+                <ProfileImg src={Profile}/>
                 <ProfileName> 아굥 </ProfileName>
                 <ProfileSubName> 개발 블로그 </ProfileSubName>
                 <ProfileDetailInfo>

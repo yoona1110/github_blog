@@ -14,7 +14,7 @@ const Header = () => {
                 <Menu>
                     {menuItem.map((item, idx) => (
                         <MenuDetail 
-                            to={`/${item}`}
+                            to={(item === 'Home') ? `/` : `/${item}`}
                             key={idx}
                             onMouseOver={() => setMouseOver(idx)}
                             onMouseOut={() => setMouseOver(null)}
