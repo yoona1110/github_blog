@@ -1,16 +1,16 @@
 {
   "files": {
-    "main.css": "/github_blog/static/css/main.f1559aff.css",
-    "main.js": "/github_blog/static/js/main.9db1d7c0.js",
-    "static/media/githubMark.svg": "/github_blog/static/media/githubMark.286b57f7dd6c4e2d10708fe01850285f.svg",
-    "static/media/emailMark.svg": "/github_blog/static/media/emailMark.def063880ba752241e8e1f8c1404f377.svg",
-    "static/media/habitationMark.svg": "/github_blog/static/media/habitationMark.9ff5867136e2bb72825af66da92991f1.svg",
-    "index.html": "/github_blog/index.html",
-    "main.f1559aff.css.map": "/github_blog/static/css/main.f1559aff.css.map",
-    "main.9db1d7c0.js.map": "/github_blog/static/js/main.9db1d7c0.js.map"
+    "main.css": "/static/css/main.f1559aff.css",
+    "main.js": "/static/js/main.6ff18f9c.js",
+    "static/media/githubMark.svg": "/static/media/githubMark.286b57f7dd6c4e2d10708fe01850285f.svg",
+    "static/media/emailMark.svg": "/static/media/emailMark.def063880ba752241e8e1f8c1404f377.svg",
+    "static/media/habitationMark.svg": "/static/media/habitationMark.9ff5867136e2bb72825af66da92991f1.svg",
+    "index.html": "/index.html",
+    "main.f1559aff.css.map": "/static/css/main.f1559aff.css.map",
+    "main.6ff18f9c.js.map": "/static/js/main.6ff18f9c.js.map"
   },
   "entrypoints": [
     "static/css/main.f1559aff.css",
-    "static/js/main.9db1d7c0.js"
+    "static/js/main.6ff18f9c.js"
   ]
 }
