@@ -69,7 +69,7 @@ const MenuDetail = styled(Link)`
 const Line = styled.hr`
     margin: 0 auto;
     width: 100vw;
-    height: 1px;
+    height: 0.5px;
     background-color: #070582;
 `;
 export default Header;
