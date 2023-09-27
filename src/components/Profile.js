@@ -45,7 +45,7 @@ const Profile = () => {
 const Container = styled.div`
     display: flex;
     flex-direction: row;
-    margin: 26px 113px 0 26px;
+    margin: 0 93px 0 31px;
 `;
 
 const ProfileInfo = styled.div`

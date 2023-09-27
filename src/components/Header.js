@@ -32,6 +32,7 @@ const Header = () => {
 const Container = styled.div`
     display: flex;
     flex-direction: column;
+    margin-bottom: 31px;
 `;
 const SubContainer = styled.div`
     display: flex;
