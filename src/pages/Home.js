@@ -15,7 +15,7 @@ const Home = () => {
                 <ProfileSubName> 개발 블로그 </ProfileSubName>
                 <ProfileDetailInfo>
                     <img 
-                        style={{ width: '19px', height: '23px' }} 
+                        style={{ width: '22px', height: '23px' }} 
                         src={habitationImg}
                     />
                     <ProfileDetailTitle> ChunCheon </ProfileDetailTitle>
@@ -60,9 +60,9 @@ const ProfileImg = styled.img`
     background-color: #F3F3F3;
 `;
 const ProfileName = styled.p`
-    margin: 11px 0 4px 0;
+    margin: 11px 0 2px 0;
     color: #4B4B4B;
-    font-size: 24px;
+    font-size: 22px;
     font-weight: 700;
     line-height: normal;
 `;
@@ -70,7 +70,7 @@ const ProfileSubName = styled.p`
     margin: 0 auto;
     margin-bottom: 50px;
     color: #4B4B4B;
-    font-size: 20px;
+    font-size: 18px;
     font-weight: 400;
     line-height: normal;
 `;
@@ -86,7 +86,7 @@ const ProfileDetailInfo = styled.div`
 const ProfileDetailTitle = styled.p`
     margin-left: 9px;
     color: #4B4B4B;
-    font-size: 19px;
+    font-size: 17px;
     font-weight: 400;
     line-height: normal;
 `;

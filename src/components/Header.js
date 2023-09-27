@@ -42,7 +42,7 @@ const SubContainer = styled.div`
 `;
 const BlogName = styled.p`
     color: #070582;
-    font-size: 28px;
+    font-size: 24px;
     font-weight: 700;
     line-height: normal;
 `;
@@ -57,10 +57,10 @@ const MenuDetail = styled(Link)`
     padding: 0 5px 6px 5px;
     transition: box-shadow 0.4s ease;
     box-shadow: ${(props) => 
-        props.isMouseOver ? "0px 4px 0px 0px #070582" : "0px transparent"};
+        props.isMouseOver ? "0px 5px 0px 0px #070582" : "0px transparent"};
 
     color: #070582;
-    font-size: 24px;
+    font-size: 20px;
     font-weight: 400;
     line-height: normal;
     text-decoration: none;
