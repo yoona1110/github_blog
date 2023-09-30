@@ -3,7 +3,7 @@ import styled from "styled-components";
 const Home = () => {
     return (
         <Container>
-            <Title> 최근 포스트 </Title>
+            <Title> Recent Post </Title>
             <Line/>
         </Container>
     );
