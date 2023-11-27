@@ -1,10 +1,12 @@
 import styled from "styled-components";
+import WriteList from "../components/WriteList";
 
 const Home = () => {
     return (
         <Container>
             <Title> Recent Post </Title>
             <Line/>
+            <WriteList/>
         </Container>
     );
 };

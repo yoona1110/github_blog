@@ -1,6 +1,6 @@
 import styled from "styled-components";
 import { useState } from "react";
-import SearchIcon from '../assets/searchMark.svg';
+import SearchIcon from '../assets/ic_searchMark.svg';
 
 const Search = () => {
     const [msg, setMsg] = useState('검색어를 입력해주세요.');

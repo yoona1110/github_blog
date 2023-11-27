@@ -1,10 +1,10 @@
 import styled from "styled-components";
 
-import habitationImg from '../assets/habitationMark.svg';
-import emailImg from '../assets/emailMark.svg';
-import gitHubImg from '../assets/githubMark.svg';
+import habitationImg from '../assets/ic_habitationMark.svg';
+import emailImg from '../assets/ic_emailMark.svg';
+import gitHubImg from '../assets/ic_githubMark.svg';
 
-import ProfilePhote from '../assets/ProfileImg.jpeg';
+import ProfilePhote from '../assets/img_ProfileImg.jpeg';
 
 const Profile = () => {
     const url = 'https://github.com/yoona1110';
