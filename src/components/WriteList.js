@@ -36,7 +36,7 @@ const WriteList = () => {
                     content={post.content}
                     date={post.date}
                     cate={post.cate}
-                    onClick={() => navigate(`/Post/${idx}`, { state: post })}
+                    onClick={() => navigate(`/Post/${idx}`, { state: {...post, cate: post.cate.join(',')}})}
                 />
             ))}
         </Container>
