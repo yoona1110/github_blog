@@ -8,6 +8,7 @@ import Home from './pages/Home';
 import Category from './pages/Category';
 import About from './pages/About';
 import Search from './pages/Search';
+import PostItem from './components/PostItem';
 
 import './App.css';
 
@@ -22,6 +23,7 @@ const App = () => {
           <Route path='/Category' element={<Category/>} />
           <Route path='/About' element={<About/>} />
           <Route path='/Search' element={<Search/>} />
+          <Route path='/Post/:id' element={<PostItem/>} />
         </Routes>
       </SubContainer>
     </Container>

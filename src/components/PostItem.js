@@ -1,9 +1,19 @@
+import React from "react";
+import { useLocation } from "react-router-dom";
 import styled from "styled-components";
 import calender from '../assets/ic_calender.png';
 
-const WriteItem = ({ id, title, date, content, cate, onClick }) => {
+const PostItem = () => {
+    const location = useLocation();
+    const { state } = location;
+
+    if (!state) {
+        return <Container> 해당 게시글을 찾을 수 없습니다. </Container>
+    }
+    const { id, title, content, date, cate } = state;
+
     return (
-        <Container onClick={onClick}>
+        <Container>
             <TitleContainer>
                 <Title> {title} </Title>
                 <DateContainer>
@@ -11,19 +21,13 @@ const WriteItem = ({ id, title, date, content, cate, onClick }) => {
                     <SubContent> {date} </SubContent>
                 </DateContainer>
             </TitleContainer>
-            <SubContent style={{ margin: '0 0 0 13px' }}> {content} </SubContent>
-            <CategoryContainer>
-                {cate.map(item => (
-                    <CateItem> {item} </CateItem>
-                ))}
-            </CategoryContainer>
         </Container>
     );
-}
+};
 
 const Container = styled.div`
-    margin-bottom: 30px;
-    cursor: pointer;
+    display: flex;
+    flex-direction: column;
 `;
 const TitleContainer = styled.div`
     display: flex;
@@ -58,13 +62,4 @@ const SubContent = styled.p`
     font-size: 16px;
     font-weight: 400; 
 `;
-const CateItem = styled.p`
-    color: #070582;
-    font-size: 15px;
-    font-weight: 400;
-    margin: 10px 0 0 8px;
-    padding: 6px 11px;
-    border: 1px #070582 solid;
-    border-radius: 10px;
-`;
-export default WriteItem;
+export default PostItem;
