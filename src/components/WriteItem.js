@@ -1,23 +1,46 @@
 import styled from "styled-components";
+import ReactMarkdown from 'react-markdown'
+import remarkGfm from 'remark-gfm'
 import calender from '../assets/ic_calender.png';
 
-const WriteItem = ({ id, title, date, content, cate, onClick }) => {
+const WriteItem = ({ id, title, content, date, cate, onClick }) => {
+    console.log('Title:', title);
+    console.log('Content:', content);
+    
     return (
         <Container onClick={onClick}>
-            <TitleContainer>
-                <Title> {title} </Title>
-                <DateContainer>
-                    <CalenderImg src={calender}/>
-                    <SubContent> {date} </SubContent>
-                </DateContainer>
-            </TitleContainer>
-            <SubContent style={{ margin: '0 0 0 13px' }}> {content} </SubContent>
-            <CategoryContainer>
-                {cate.map(item => (
-                    <CateItem> {item} </CateItem>
-                ))}
-            </CategoryContainer>
+            <ReactMarkdown remarkPlugins={[remarkGfm]}>
+            {`# ${title}\n${content}`}
+      	    </ReactMarkdown>
+              <TitleContainer>
+                 <Title> {title} </Title>
+                 <DateContainer>
+                     <CalenderImg src={calender}/>
+                     <SubContent> {date} </SubContent>
+                 </DateContainer>
+             </TitleContainer>
+             <SubContent style={{ margin: '0 0 0 13px' }}> {content} </SubContent>
+             <CategoryContainer>
+                 {/* {cate.map(item => ( */}
+                     <CateItem> {cate} </CateItem>
+                 {/* ))} */}
+             </CategoryContainer>
         </Container>
+        // <Container onClick={onClick}>
+        //     <TitleContainer>
+        //         <Title> {title} </Title>
+        //         <DateContainer>
+        //             <CalenderImg src={calender}/>
+        //             <SubContent> {date} </SubContent>
+        //         </DateContainer>
+        //     </TitleContainer>
+        //     <SubContent style={{ margin: '0 0 0 13px' }}> {content} </SubContent>
+        //     <CategoryContainer>
+        //         {/* {cate.map(item => ( */}
+        //             <CateItem> {cate} </CateItem>
+        //         {/* ))} */}
+        //     </CategoryContainer>
+        // </Container>
     );
 }
 
