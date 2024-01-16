@@ -1,25 +1,45 @@
+import React, { useState, useEffect } from 'react';
 import { useNavigate } from "react-router-dom";
 import styled from "styled-components";
 import matter from "gray-matter";
 
 import WriteItem from "./WriteItem";
 
-const postContext = require.context('../_posts', false, /\.md$/);
-const posts = postContext.keys().map((key) => {
-    const post = postContext(key);
-    const { frontmatter, content } = matter(post);
-    console.log('Post Data:', { frontmatter, content });
-    return { ...frontmatter, content };
-});
-
-console.log("Posts:", posts);
+async function getAllPosts() { 
+    const postContext = require.context('../_posts', false, /\.md$/);
+    const posts = [];
+    for (const key of postContext.keys()) {
+        const post = key.slice(2);
+        console.log(postContext);
+        const content = await import(`../_posts/${post}`);
+        const meta = matter(content.default);
+        posts.push({
+            slug: post.replace('.md', ''),
+            title: meta.data.title,
+            content: content.default,
+            date: meta.data.date,
+            cate: meta.data.cate,
+        });
+    }
+    return posts;
+}
 
 const WriteList = () => {
+    const [data, setData] = useState([]);
     const navigate = useNavigate();
 
+    useEffect(() => {
+        const fetchData = async () => {
+            const posts = await getAllPosts();
+            setData(posts);
+        }
+        fetchData();
+    }, []);
+
+    console.log(data);
     return (
         <Container>
-            {posts.map((post, idx) => (
+            {data.map((post, idx) => (
                 <WriteItem 
                     key={idx}
                     id={idx}

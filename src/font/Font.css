@@ -1,0 +1,47 @@
+@font-face {
+    font-family: 'Giants';
+    font-style: normal;
+    src: url('./Giants-Bold.ttf') format('ttf');
+}
+
+@font-face {
+    font-family: 'Giants';
+    font-style: normal;
+    src: url('./Giants-Regular.ttf') format('ttf');
+}
+
+@font-face {
+    font-family: 'IBMPlexSansKR';
+    font-style: normal;
+    src: url('./IBMPlexSansKR-Bold.ttf') format('ttf');
+}
+
+@font-face {
+    font-family: 'IBMPlexSansKR';
+    font-style: normal;
+    src: url('./IBMPlexSansKR-SemiBold.ttf') format('ttf');
+}
+
+@font-face {
+    font-family: 'IBMPlexSansKR';
+    font-style: normal;
+    src: url('./IBMPlexSansKR-ExtraLight.ttf') format('ttf');
+}
+
+@font-face {
+    font-family: 'IBMPlexSansKR';
+    font-style: normal;
+    src: url('./IBMPlexSansKR-Light.ttf') format('ttf');
+}
+
+@font-face {
+    font-family: 'IBMPlexSansKR';
+    font-style: normal;
+    src: url('./IBMPlexSansKR-Medium.ttf') format('ttf');
+}
+
+@font-face {
+    font-family: 'IBMPlexSansKR';
+    font-style: normal;
+    src: url('./IBMPlexSansKR-Regular.ttf') format('ttf');
+}
