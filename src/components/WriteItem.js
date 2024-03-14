@@ -3,10 +3,7 @@ import ReactMarkdown from 'react-markdown'
 import remarkGfm from 'remark-gfm'
 import calender from '../assets/ic_calender.png';
 
-const WriteItem = ({ id, title, content, date, cate, onClick }) => {
-    console.log('Title:', title);
-    console.log('Content:', content);
-    
+const WriteItem = ({ title, content, date, cate, tags, onClick }) => {
     return (
         <Container onClick={onClick}>
             <ReactMarkdown remarkPlugins={[remarkGfm]}>
